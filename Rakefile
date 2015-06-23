@@ -18,6 +18,10 @@ Hoe.spec 'whatson' do
   self.history_file = 'HISTORY.md'
 
   self.extra_deps = [
+    ['eventdb', '>= 0.5.0'],
+    ## 3rd party
+    ['fetcher', '>= 0.4.5'],
+    ['sqlite3']
   ]
 
   self.licenses = ['Public Domain']

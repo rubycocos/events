@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+###################
+# == DEV TIPS:
+#
+# For local testing run like:
+#
+#    ruby -Ilib bin/kickoff
+#
+# Set the executable bit in Linux. Example:
+#
+#    % chmod a+x bin/kickoff
+#
+
+require 'whatson'
+
+WhatsOn::Football.new.print
+

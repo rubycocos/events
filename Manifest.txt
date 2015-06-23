@@ -2,5 +2,13 @@ HISTORY.md
 Manifest.txt
 README.md
 Rakefile
+bin/beerfest
+bin/kickoff
+bin/rubyconf
 lib/whatson.rb
+lib/whatson/beerfest.rb
+lib/whatson/football.rb
+lib/whatson/rubyconf.rb
 lib/whatson/version.rb
+test/helper.rb
+test/test_rubyconf.rb
