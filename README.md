@@ -14,10 +14,6 @@ what's on now command line tool (using the event.db machinery)
 The whatson gem includes command-line tools
 to list upcoming events (ruby conferences, football tournaments, beer festivals. etc.).
 
-[Upcoming Ruby Conferences](#upcoming-ruby-conferences)   •
-[Upcoming Football Tournaments](#upcoming-football-tournaments)  •
-[Upcoming Beerfests](#upcoming-beerfests)
-
 
 ### Upcoming Ruby Conferences
 
