@@ -15,10 +15,10 @@ Hoe.spec 'whatson' do
 
   # switch extension to .markdown for gihub formatting
   self.readme_file  = 'README.md'
-  self.history_file = 'HISTORY.md'
+  self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
-    ['eventdb', '>= 0.5.0'],
+    ['eventdb', '>= 1.0.0'],
     ## 3rd party
     ['fetcher', '>= 0.4.5'],
     ['sqlite3']
@@ -27,7 +27,6 @@ Hoe.spec 'whatson' do
   self.licenses = ['Public Domain']
 
   self.spec_extras = {
-    required_ruby_version: '>= 1.9.2'
+    required_ruby_version: '>= 2.2.2'
   }
-
 end

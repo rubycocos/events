@@ -1,4 +1,4 @@
-HISTORY.md
+CHANGELOG.md
 Manifest.txt
 README.md
 Rakefile
@@ -11,4 +11,6 @@ lib/whatson/football.rb
 lib/whatson/rubyconf.rb
 lib/whatson/version.rb
 test/helper.rb
+test/test_beerfest.rb
+test/test_kickoff.rb
 test/test_rubyconf.rb

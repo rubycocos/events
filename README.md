@@ -9,56 +9,82 @@ what's on now command line tool (using the event.db machinery)
 * forum :: [ruby-talk@ruby-lang.org](http://www.ruby-lang.org/en/community/mailing-lists)
 
 
-## Command-Line Tools
+## Command-Line Tools - `rubyconf`, `kickoff`, `beerfest`
 
 The whatson gem includes command-line tools
 to list upcoming events (ruby conferences, football tournaments, beer festivals. etc.).
+
+[Upcoming Ruby Conferences](#upcoming-ruby-conferences)   •
+[Upcoming Football Tournaments](#upcoming-football-tournaments)  •
+[Upcoming Beerfests](#upcoming-beerfests)
 
 
 ### Upcoming Ruby Conferences
 
 Use
 
-~~~
+```
 $ rubyconf
-~~~
+```
 
-to list upcoming Ruby (un)conferences from around the world. Will print:
+to list upcoming Ruby (un)conferences from around the world. Will print in 2020:
 
-~~~
+```
 Upcoming Ruby Conferences:
 
-  in 8d    RubyMotion Conference - #inspect, Wed+Thu Jul/1+2 (2d) @ Paris, France › Europe
-  in 27d   Brighton Ruby Conference, Mon Jul/20 (1d) @ Brighton, East Sussex › England (en) › Western Europe › Europe
-  in 38d   European Ruby Camp - eurucamp, Fri-Sun Jul/31-Aug/2 (3d) @ Berlin (Potsdam), Germany › Europe
-  in 38d   JRuby Conference Europe - JRubyConf EU, Fri Jul/31 (1d) @ Berlin (Potdam), Germany › Europe
-  in 39d   Burlington Ruby Conference, Sat+Sun Aug/1+2 (2d) @ Burlington, Vermont › New England › United States (us) › North America › America
-  in 59d   Madison+ Ruby, Fri+Sat Aug/21+22 (2d) @ Madison, Wisconsin › Great Lakes › United States (us) › North America › America
-  in 70d   Full Stack Fest - Barcelona Ruby Conference (BaRuCo) + Barcelona Future JS, Tue-Sat Sep/1-5 (5d) @ Barcelona, Catalonia › Spain / España (es) › Southern Europe › Europe
-  in 80d   RubyConf Taiwan, Fri+Sat Sep/11+12 (2d) @ Taipei › Taiwan (tw) › Asia
-  in 83d   RubyConf Portugal, Mon+Tue Sep/14+15 (2d) @ Braga › Portugal (pt) › Southern Europe › Europe
-  in 87d   RubyConf Brasil, Fri+Sat Sep/18+19 (2d) @ São Paulo › Brazil / Brasil (br) › South America › America
-  in 92d   Rocky Mountain Ruby Conference, Wed-Fri Sep/23-25 (3d) @ Boulder, Colorado › Rocky Mountains › United States (us) › North America › America
-  in 95d   Ruby Open Source Software (ROSS) Conference - ROSSConf, Sat Sep/26 (1d) @ Berlin, Germany › Europe
-  in 100d  ArrrCamp, Thu+Fri Oct/1+2 (2d) @ Ghent, Oost-Vlaanderen › Belgium / België / Belgique (be) › Western Europe › Europe
-  in 114d  RubyConf Colombia, Thu+Fri Oct/15+16 (2d) @ Medellin › Colombia (co) › South America › America
-  in 116d  European Ruby Konference - EuRuKo, Sat+Sun Oct/17+18 (2d) @ Salzburg, Austria › Europe
-  in 141d  RubyWorld Conference, Wed+Thu Nov/11+12 (2d) @ Matsue › Japan (jp) › Asia
+  in 62d   Rubyfuza, Thu-Sat Feb/6-8 (3d) @ Cape Town, South Africa
+  in 74d   ParisRB Conf, Tue+Wed Feb/18+19 (2d) @ Paris, France
+  in 76d   RubyConf Australia, Thu+Fri Feb/20+21 (2d) @ Melbourne, Victoria, Australia
+  in 105d  Wrocław <3 Ruby (wroclove.rb), Fri-Sun Mar/20-22 (3d) @ Wrocław, Poland
+  in 118d  RubyDay Italy, Thu Apr/2 (1d) @ Verona, Veneto, Italy
+  in 125d  RubyKaigi, Thu-Sat Apr/9-11 (3d) @ Nagano, Japan
+  in 141d  RubyConf India, Sat+Sun Apr/25+26 (2d) @ Goa, India
+  in 151d  RailsConf (United States), Tue-Thu May/5-7 (3d) @ Portland, Oregon, United States
+  in 161d  Balkan Ruby, Fri+Sat May/15+16 (2d) @ Sofia, Bulgaria
+  in 183d  Ruby Unconf Hamburg, Sat+Sun Jun/6+7 (2d) @ Hamburg, Germany
+  in 210d  Brighton RubyConf, Fri Jul/3 (1d) @ Brighton, Sussex, England, United Kingdom
+  in 230d  RubyConf Kenya, Thu-Sat Jul/23-25 (3d) @ Nairobi, Kenya
+  in 259d  European Ruby Konference (EuRuKo), Fri+Sat Aug/21+22 (2d) @ Helsinki, Finnland
+  in 347d  RubyConf (United States), Tue-Thu Nov/17-19 (3d) @ Houston, Texas, United States
+```
+
+and back in 2015
+
+```
+Upcoming Ruby Conferences:
+
+  NOW ON 2d   RubyMotion Conference - #inspect, Wed+Thu Jul/1+2 (2d) @ Paris, France
+
+  in 18d   Brighton Ruby Conference, Mon Jul/20 (1d) @ Brighton, East Sussex, England
+  in 27d   European Ruby Camp - eurucamp, Fri-Sun Jul/31-Aug/2 (3d) @ Berlin (Potsdam), Germany
+  in 27d   JRuby Conference Europe - JRubyConf EU, Fri Jul/31 (1d) @ Berlin (Potsdam), Germany
+  in 28d   Burlington Ruby Conference, Sat+Sun Aug/1+2 (2d) @ Burlington, Vermont, New England, United States
+  in 50d   Madison+ Ruby, Fri+Sat Aug/21+22 (2d) @ Madison, Wisconsin, Great Lakes,  United States
+  in 71d   RubyConf Taiwan, Fri+Sat Sep/11+12 (2d) @ Taipei, Taiwan
+  in 72d   RubyConf Portugal, Mon+Tue Sep/14+15 (2d) @ Braga, Portugal
+  in 78d   RubyConf Brasil, Fri+Sat Sep/18+19 (2d) @ São Paulo, Brazil
+  in 83d   Rocky Mountain RubyConf, Wed-Fri Sep/23-25 (3d) @ Boulder, Colorado, Rocky Mountains, United States
+  in 85d   Ruby Open Source Software (ROSS) Conference - ROSSConf, Sat Sep/26 (1d) @ Berlin, Germany
+  in 93d   ArrrCamp, Thu+Fri Oct/1+2 (2d) @ Ghent, Oost-Vlaanderen, Belgium
+  in 105d  RubyConf Colombia, Thu+Fri Oct/15+16 (2d) @ Medellin, Colombia
+  in 107d  European Ruby Konference - EuRuKo, Sat+Sun Oct/17+18 (2d) @ Salzburg, Austria
+  in 132d  RubyWorld Conference, Wed+Thu Nov/11+12 (2d) @ Matsue, Japan
   ...
-~~~
+```
+
 
 
 ### Upcoming Football Tournaments
 
 Use
 
-~~~
+```
 $ kickoff
-~~~
+```
 
 to list upcoming football tournaments from around the world. Will print:
 
-~~~
+```
 Upcoming Football Tournaments:
 
   NOW ON 18d    Women's World Cup 2015, Sat-Sun Jun/6-Jul/5 (30d) @ Canada › World (FIFA)
@@ -69,20 +95,20 @@ Upcoming Football Tournaments:
   in 353d   European Championship (Euro) 2016, Fri-Sun Jun/10-Jul/10 (31d) @ France › Europe (UEFA)
   in 1087d  World Cup 2018, Thu-Sun Jun/14-Jul/15 (32d) @ Russia › World (FIFA)
   ...
-~~~
+```
 
 
 ### Upcoming Beerfests
 
 Use
 
-~~~
+```
 $ beerfest
-~~~
+```
 
 to list upcoming beer festivals from around the world. Will print:
 
-~~~
+```
 Upcoming Beerfests:
 
   in 9d    Ottakringer Braukultur Wochen (9 Brauereien in 9 Wochen), Thu-Wed Jul/2-Sep/2 (63d) @ 16., Ottakring › Vienna / Wien › Austria / Österreich (at) › Central Europe › Europe
@@ -92,14 +118,16 @@ Upcoming Beerfests:
   in 88d   Oktoberfest ("Die Wiesn"), Sat-Sun Sep/19-Oct/4 (16d) @ Munich / München › Upper Bavaria / Oberbayern › Bavaria / Bayern › Germany / Deutschland (de) › Central Europe › Europe
   in 123d  Biermesse Ried (Festival der Biervielfalt), Sat+Sun Oct/24+25 (2d) @ Ried i. Innkreis › Upper Austria / Oberösterreich › Austria / Österreich (at) › Central Europe › Europe
   ...
-~~~
+```
+
 
 
 ## Public Event Datasets
 
-- [awesome-events @ Planet Ruby](https://github.com/planetruby/awesome-events) - a collection of awesome Ruby events (meetups, conferences, camps, etc.) from around the world
-- [calendar @ football.db](https://github.com/openfootball/calendar) - a collection of awesome football tournaments, cups, etc. from around the world
-- [calendar @ beer.db](https://github.com/openbeer/calendar) - a collection of awesome beer events (oktoberfest, starkbierfest, etc.) from around the world
+- [Calendar @ Planet Ruby](https://github.com/planetruby/calendar) - a collection of awesome Ruby events (meetups, conferences, camps, etc.) from around the world
+- [Calendar @ World Football Book](https://github.com/footballbook/calendar) - a collection of awesome football tournaments, cups, etc. from around the world
+- [Calendar @ World Beer Book](https://github.com/beerbook/calendar) - a collection of awesome beer events (oktoberfest, starkbierfest, etc.) from around the world
+
 
 
 ## Install

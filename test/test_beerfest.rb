@@ -2,20 +2,20 @@
 
 ###
 #  to run use
-#     ruby -I ./lib -I ./test test/test_rubyconf.rb
+#     ruby -I ./lib -I ./test test/test_beerfest.rb
 
 
 require 'helper'
 
-class TestRubyConf < MiniTest::Test
+class TestBeerFest < MiniTest::Test
 
   def test_print
 
-    r = WhatsOn::RubyConf.new
+    r = WhatsOn::BeerFest.new
     r.print
     r.print
 
     assert true  # assume ok if we get here
   end
 
-end # class TestRubyConf
+end # class TestBeerFest
