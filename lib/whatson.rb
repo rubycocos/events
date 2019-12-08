@@ -11,6 +11,7 @@ require 'fetcher'
 require 'whatson/version'      ## let version always go first
 
 
+require 'whatson/tool'
 require 'whatson/beerfest'   ## used by beerfest bin(ary) tool
 require 'whatson/rubyconf'   ## used by rubyconf bin(ary) tool
 require 'whatson/football'   ## used by kickoff bin(ary) tool
@@ -21,4 +22,3 @@ require 'whatson/football'   ## used by kickoff bin(ary) tool
 
 # say hello
 puts WhatsOn.banner    if defined?($RUBYLIBS_DEBUG) && $RUBYLIBS_DEBUG
-

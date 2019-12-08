@@ -9,11 +9,11 @@ require 'helper'
 
 class TestBeerFest < MiniTest::Test
 
-  def test_print
+  def test_list
 
-    r = WhatsOn::BeerFest.new
-    r.print
-    r.print
+    whatson = WhatsOn::BeerFest.new
+    whatson.list
+    whatson.list
 
     assert true  # assume ok if we get here
   end

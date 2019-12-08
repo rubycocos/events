@@ -14,4 +14,4 @@
 
 require 'whatson'
 
-WhatsOn::RubyConf.new.print
+WhatsOn::RubyConf.main

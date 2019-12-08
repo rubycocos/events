@@ -14,5 +14,4 @@
 
 require 'whatson'
 
-WhatsOn::Football.new.print
-
+WhatsOn::Football.main
