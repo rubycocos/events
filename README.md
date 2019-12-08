@@ -84,18 +84,18 @@ to list upcoming Python (un)conferences from around the world. Will print in 202
 ```
 Upcoming Python Conferences:
 
-  in 62d  PyCascades, Sat+Sun Feb/8+9 (2d) @ Portland, Oregon, United States of America
+  in 62d  PyCascades, Sat+Sun Feb/8+9 (2d) @ Portland, Oregon, United States
   in 72d  PyCon Namibia, Tue-Thu Feb/18-20 (3d) @ Windhoek, Namibia
-  in 90d  PyTennessee, Sat+Sun Mar/7+8 (2d) @ Nashville, Tennessee, United States of America
-  in 110d  Moscow Python Conf ++ 2020, Fri Mar/27 (1d) @ Moscow, Russia
+  in 90d  PyTennessee, Sat+Sun Mar/7+8 (2d) @ Nashville, Tennessee, United States
+  in 110d  Moscow Python Conf, Fri Mar/27 (1d) @ Moscow, Russia
   in 116d  PyCon Italy, Thu-Sun Apr/2-5 (4d) @ Florence, Italy
-  in 129d  PyCon US, Wed-Thu Apr/15-23 (9d) @ Pittsburgh, Pennsylvania, United States of America
-  in 160d  PyTexas, Sat+Sun May/16+17 (2d) @ Austin, Texas, United States of America
+  in 129d  PyCon US, Wed-Thu Apr/15-23 (9d) @ Pittsburgh, Pennsylvania, United States
+  in 160d  PyTexas, Sat+Sun May/16+17 (2d) @ Austin, Texas, United States
   in 225d  EuroPython, Mon-Sun Jul/20-26 (7d) @ Dublin, Ireland
-  in 230d  PyOhio, Sat+Sun Jul/25+26 (2d) @ Columbus, Ohio, United States of America
+  in 230d  PyOhio, Sat+Sun Jul/25+26 (2d) @ Columbus, Ohio, United States
   in 232d  EuroSciPy, Mon-Fri Jul/27-31 (5d) @ Bilbao, Spain
   in 232d  GeoPython, Mon-Fri Jul/27-31 (5d) @ Bilbao, Spain
-  in 311d  PyConDE & PyData Berlin 2020, Wed-Fri Oct/14-16 (3d) @ Berlin, Germany
+  in 311d  PyConDE & PyData Berlin, Wed-Fri Oct/14-16 (3d) @ Berlin, Germany
 ```
 
 
@@ -182,6 +182,40 @@ $ whatson https://github.com/planetruby/calendar/raw/master/_data/conferences202
 Note: `whatson` is pre-configured (that is, if you do not pass along any datafiles)
 to print ongoing and upcoming ruby and python conferences.
 
+For easy (re)use you can write all datafiles in a text file and pass along the
+text file. Example - `conf.txt`:
+
+```
+########################################
+#  conf.txt - What's On Datafiles
+
+https://github.com/planetruby/calendar/raw/master/_data/conferences2020.yml
+https://github.com/python-organizers/conferences/raw/master/2020.csv  
+```
+
+And pass along to `whatson`. Example:
+
+```
+$ whatson conf.txt
+```
+
+Resulting in 2020:
+
+```
+reading >conf.txt<...
+  reading >https://github.com/planetruby/calendar/raw/master/_data/conferences2020.yml<...
+  reading >https://github.com/python-organizers/conferences/raw/master/2020.csv<...
+
+
+Upcoming Events:
+
+ in 60d  Rubyfuza, Thu-Sat Feb/6-8 (3d) @ Cape Town, South Africa
+ in 62d  PyCascades, Sat+Sun Feb/8+9 (2d) @ Portland, Oregon, United States
+ in 72d  ParisRB Conf, Tue+Wed Feb/18+19 (2d) @ Paris, France
+ in 72d  PyCon Namibia, Tue-Thu Feb/18-20 (3d) @ Windhoek, Namibia
+ ...
+```
+
 
 
 
@@ -190,6 +224,7 @@ to print ongoing and upcoming ruby and python conferences.
 - [Calendar @ Planet Ruby](https://github.com/planetruby/calendar) - a collection of awesome Ruby events (meetups, conferences, camps, etc.) from around the world
 - [Calendar @ World Football Book](https://github.com/footballbook/calendar) - a collection of awesome football tournaments, cups, etc. from around the world
 - [Calendar @ World Beer Book](https://github.com/beerbook/calendar) - a collection of awesome beer events (oktoberfest, starkbierfest, etc.) from around the world
+
 
 
 
