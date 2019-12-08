@@ -4,12 +4,17 @@ README.md
 Rakefile
 bin/beerfest
 bin/kickoff
+bin/pycon
 bin/rubyconf
+bin/whatson
 lib/whatson.rb
 lib/whatson/beerfest.rb
 lib/whatson/football.rb
+lib/whatson/pycon.rb
 lib/whatson/rubyconf.rb
+lib/whatson/tool.rb
 lib/whatson/version.rb
+lib/whatson/whatson.rb
 test/helper.rb
 test/test_beerfest.rb
 test/test_kickoff.rb

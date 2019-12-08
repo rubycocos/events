@@ -18,7 +18,7 @@ Hoe.spec 'whatson' do
   self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
-    ['eventdb', '>= 1.0.0'],
+    ['eventdb', '>= 1.1.0'],
     ## 3rd party
     ['fetcher', '>= 0.4.5'],
     ['sqlite3']

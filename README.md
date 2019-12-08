@@ -9,10 +9,11 @@ what's on now command line tool (using the event.db machinery)
 * forum :: [ruby-talk@ruby-lang.org](http://www.ruby-lang.org/en/community/mailing-lists)
 
 
-## Command-Line Tools - `rubyconf`, `kickoff`, `beerfest`
+## Command Line Tools - `rubyconf`, `pycon`, `kickoff`, `beerfest`
 
-The whatson gem includes command-line tools
-to list upcoming events (ruby conferences, football tournaments, beer festivals. etc.).
+The whatson package includes command line tools
+to list upcoming events (ruby conferences, python conferences,
+football tournaments, beer festivals. etc.).
 
 
 ### Upcoming Ruby Conferences
@@ -70,6 +71,34 @@ Upcoming Ruby Conferences:
 
 
 
+### Upcoming Python Conferences
+
+Use
+
+```
+$ pycon
+```
+
+to list upcoming Python (un)conferences from around the world. Will print in 2020:
+
+```
+Upcoming Python Conferences:
+
+  in 62d  PyCascades, Sat+Sun Feb/8+9 (2d) @ Portland, Oregon, United States of America
+  in 72d  PyCon Namibia, Tue-Thu Feb/18-20 (3d) @ Windhoek, Namibia
+  in 90d  PyTennessee, Sat+Sun Mar/7+8 (2d) @ Nashville, Tennessee, United States of America
+  in 110d  Moscow Python Conf ++ 2020, Fri Mar/27 (1d) @ Moscow, Russia
+  in 116d  PyCon Italy, Thu-Sun Apr/2-5 (4d) @ Florence, Italy
+  in 129d  PyCon US, Wed-Thu Apr/15-23 (9d) @ Pittsburgh, Pennsylvania, United States of America
+  in 160d  PyTexas, Sat+Sun May/16+17 (2d) @ Austin, Texas, United States of America
+  in 225d  EuroPython, Mon-Sun Jul/20-26 (7d) @ Dublin, Ireland
+  in 230d  PyOhio, Sat+Sun Jul/25+26 (2d) @ Columbus, Ohio, United States of America
+  in 232d  EuroSciPy, Mon-Fri Jul/27-31 (5d) @ Bilbao, Spain
+  in 232d  GeoPython, Mon-Fri Jul/27-31 (5d) @ Bilbao, Spain
+  in 311d  PyConDE & PyData Berlin 2020, Wed-Fri Oct/14-16 (3d) @ Berlin, Germany
+```
+
+
 ### Upcoming Football Tournaments
 
 Use
@@ -115,6 +144,44 @@ Upcoming Beerfests:
   in 123d  Biermesse Ried (Festival der Biervielfalt), Sat+Sun Oct/24+25 (2d) @ Ried i. Innkreis › Upper Austria / Oberösterreich › Austria / Österreich (at) › Central Europe › Europe
   ...
 ```
+
+
+
+## Do-It-Yourself (DIY) - Use Your Own Datasets
+
+Note: You can pass in local or remote datafiles in the markdown, yaml or csv formats
+instead of using the built-in / pre-configured datafiles.
+Example:
+
+```
+$ rubyconf https://github.com/planetruby/calendar/raw/master/_data/conferences2020.yml
+# - or -
+$ rubyconf conferences2020.yml  # note: assumes a saved (local) copy in the working dir (./)
+
+$ pycon https://github.com/python-organizers/conferences/raw/master/2020.csv
+# - or
+$ pycon 2020.csv                # note: assumes a saved (local) copy in the working dir (./)
+
+$ kickoff https://github.com/footballbook/calendar/raw/master/README.md
+# - or -
+$ kickoff README.md             # note: assumes a saved (local) copy in the working dir (./)
+```
+
+
+
+## `whatson` Command Line Tool
+
+Use the `whatson` command line tool as a "generic catch-all" to print any type of event.
+Example:
+
+```
+$ whatson https://github.com/planetruby/calendar/raw/master/_data/conferences2020.yml \
+          https://github.com/python-organizers/conferences/raw/master/2020.csv
+```
+
+Note: `whatson` is pre-configured (that is, if you do not pass along any datafiles)
+to print ongoing and upcoming ruby and python conferences.
+
 
 
 
