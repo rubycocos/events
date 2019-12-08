@@ -147,7 +147,7 @@ Upcoming Beerfests:
 
 
 
-## Do-It-Yourself (DIY) - Use Your Own Datasets
+## Do-It-Yourself (DIY) - Use Your Own Event Datasets
 
 Note: You can pass in local or remote datafiles in the markdown, yaml or csv formats
 instead of using the built-in / pre-configured datafiles.
