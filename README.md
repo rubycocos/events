@@ -1,9 +1,9 @@
-# core tools, libraries & scripts
+# events - tools, libraries & scripts, schemas & formats
 
 Gems:
 
 - [**whatson**](whatson)  - what's on now command line tool (using the event.db machinery) incl. rubyconf, pyconf, beerfest, etc.
-
+- [eventdb](eventdb) - event.db schema 'n' models for easy (re)use
 
 
 

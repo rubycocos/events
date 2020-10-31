@@ -1,0 +1,41 @@
+require 'hoe'
+require './lib/eventdb/version.rb'
+
+Hoe.spec 'eventdb' do
+
+  self.version = EventDb::VERSION
+
+  self.summary = "eventdb - event.db schema 'n' models for easy (re)use"
+  self.description = summary
+
+  self.urls    = ['https://github.com/textkit/event.db']
+
+  self.author  = 'Gerald Bauer'
+  self.email   = 'ruby-talk@ruby-lang.org'
+
+  # switch extension to .markdown for gihub formatting
+  self.readme_file  = 'README.md'
+  self.history_file = 'CHANGELOG.md'
+
+  self.extra_deps = [
+    ['props',    '>= 1.2.0'], # settings / prop(ertie)s / env / INI
+    ['logutils', '>= 0.6.1'], # logging
+    ['csvreader', '>= 1.2.4'], # read tabular (csv) data
+
+    ## 3rd party
+    ['activerecord'], # NB: will include activesupport,etc.
+
+    ## more activerecord utils/addons
+    ## ['tagutils', '>= 0.3.0'], # tags n categories for activerecord
+    ## ['activerecord-utils', '>= 0.4.0'],
+    ['props-activerecord',    '>= 0.2.0'],
+    ['logutils-activerecord', '>= 0.2.1'],
+  ]
+
+  self.licenses = ['Public Domain']
+
+  self.spec_extras = {
+    required_ruby_version: '>= 2.2.2'
+  }
+
+end

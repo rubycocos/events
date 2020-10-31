@@ -1,0 +1,5 @@
+#####################################
+#  Test List of Event Datafiles / Dataset Sources
+
+test/data/conferences.yml
+test/data/conferences.csv

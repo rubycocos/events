@@ -1,0 +1,68 @@
+## source: https://github.com/ruby-conferences/ruby-conferences.github.io/blob/master/_data/conferences.yml
+
+- name: Rubyfuza
+  location: Cape Town, South Africa
+  start_date: 2020-02-06
+  end_date: 2020-02-08
+  url: http://www.rubyfuza.org
+  twitter: rubyfuza
+
+- name: ParisRB Conf
+  location: Paris, France
+  url: https://2020.rubyparis.org/
+  start_date: 2020-02-18
+  end_date: 2020-02-19
+  twitter: parisrb
+
+- name: RubyConf AU
+  location: Melbourne, Australia
+  url: https://www.rubyconf.org.au/2020
+  start_date: 2020-02-20
+  end_date: 2020-02-21
+  twitter: rubyconf_au
+
+
+- name: RubyDay
+  location: Verona, Italy
+  start_date: 2020-04-02
+  end_date: 2020-04-02
+  url: https://2020.rubyday.it
+  twitter: rubydayit
+
+- name: RubyKaigi
+  location: Nagano, Japan
+  start_date: 2020-04-09
+  end_date: 2020-04-11
+  url: https://rubykaigi.org/2020
+  twitter: rubykaigi
+
+
+- name: RailsConf
+  location: Portland, OR
+  start_date: 2020-05-05
+  end_date: 2020-05-07
+  url: https://railsconf.com/
+  twitter: railsconf
+
+- name: Balkan Ruby
+  location: Sofia, Bulgaria
+  start_date: 2020-05-15
+  end_date: 2020-05-16
+  url: https://balkanruby.com
+  twitter: balkanruby
+
+
+- name: Brighton Ruby Conf
+  location: Brighton, UK
+  start_date: 2020-07-03
+  end_date: 2020-07-03
+  url: https://brightonruby.com
+  twitter: brightonruby
+
+
+- name: RubyConf
+  location: Houston, TX
+  start_date: 2020-11-17
+  end_date: 2020-11-19
+  url: https://rubyconf.org
+  twitter: rubyconf
