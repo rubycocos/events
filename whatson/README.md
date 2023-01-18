@@ -2,11 +2,11 @@
 
 what's on now command line tool (using the event.db machinery)
 
-* home  :: [github.com/textkit/whatson](https://github.com/textkit/whatson)
-* bugs  :: [github.com/textkit/whatson/issues](https://github.com/textkit/whatson/issues)
+* home  :: [github.com/rubycocos/events](https://github.com/rubycocos/events)
+* bugs  :: [github.com/rubycocos/events/issues](https://github.com/rubycocos/events/issues)
 * gem   :: [rubygems.org/gems/whatson](https://rubygems.org/gems/whatson)
 * rdoc  :: [rubydoc.info/gems/whatson](http://rubydoc.info/gems/whatson)
-* forum :: [ruby-talk@ruby-lang.org](http://www.ruby-lang.org/en/community/mailing-lists)
+
 
 
 ## Command Line Tools - `rubyconf`, `pycon`, `kickoff`, `beerfest`
