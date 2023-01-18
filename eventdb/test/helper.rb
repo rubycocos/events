@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 
 ## minitest setup
 require 'minitest/autorun'

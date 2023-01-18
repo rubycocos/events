@@ -1,6 +1,15 @@
 require 'hoe'
 require './lib/whatson/version.rb'
 
+
+###
+# hack/ quick fix for broken intuit_values - overwrite with dummy
+class Hoe
+  def intuit_values( input ); end
+end
+
+
+
 Hoe.spec 'whatson' do
 
   self.version = WhatsOn::VERSION
@@ -8,7 +17,7 @@ Hoe.spec 'whatson' do
   self.summary = "whatson - what's on now command line tool (using the event.db machinery)"
   self.description = summary
 
-  self.urls    = ['https://github.com/textkit/whatson']
+  self.urls    = { home: 'https://github.com/rubycocos/events' }
 
   self.author  = 'Gerald Bauer'
   self.email   = 'ruby-talk@ruby-lang.org'
@@ -18,7 +27,7 @@ Hoe.spec 'whatson' do
   self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
-    ['eventdb', '>= 1.1.0'],
+    ['eventdb', '>= 1.1.1'],
     ## 3rd party
     ['fetcher', '>= 0.4.5'],
     ['sqlite3']

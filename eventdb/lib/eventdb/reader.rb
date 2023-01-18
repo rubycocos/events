@@ -1,4 +1,3 @@
-# encoding: utf-8
 
 
 module EventDb
@@ -114,7 +113,12 @@ class YamlParser
 
   def parse
     events = []
-    recs = YAML.load( @text )
+    ## fix:  unquoted dates e.g. 2022-11-27  no longer supported!!
+    ##         with YAML.safe_load
+    ##
+    ## quick fix:  assume Pysch yaml parser
+    ##   and allow Date!!!
+    recs = YAML.load( @text, permitted_classes: [Date] )
 
     recs.each do |rec|
       title      = rec['name']     || rec['title']

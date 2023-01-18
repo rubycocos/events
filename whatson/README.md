@@ -24,7 +24,20 @@ Use
 $ rubyconf
 ```
 
-to list upcoming Ruby (un)conferences from around the world. Will print in 2020:
+to list upcoming Ruby (un)conferences from around the world. Will print in 2023:
+
+```
+Upcoming Ruby Conferences:
+
+  in 33d   RubyConf Australia, Mon+Tue Feb/20+21 (2d) @ Melbourne, Australia
+  in 96d   RailsConf (United States), Mon-Wed Apr/24-26 (3d) @ Atlanta, Georgia, United States
+  in 113d  RubyKaigi, Thu-Sat May/11-13 (3d) @ Nagano, Japan
+  in 162d  Punk's Not Dead Conf - Ruby (Pixel) Art Programming, Thu+Fri Jun/29+30 (2d) @ Vienna, Austria
+  ...
+```
+
+
+and back in 2020:
 
 ```
 Upcoming Ruby Conferences:
@@ -154,13 +167,13 @@ instead of using the built-in / pre-configured datafiles.
 Example:
 
 ```
-$ rubyconf https://github.com/planetruby/calendar/raw/master/_data/conferences2020.yml
+$ rubyconf https://github.com/planetruby/calendar/raw/master/_data/conferences2023.yml
 # - or -
-$ rubyconf conferences2020.yml  # note: assumes a saved (local) copy in the working dir (./)
+$ rubyconf conferences2023.yml  # note: assumes a saved (local) copy in the working dir (./)
 
-$ pycon https://github.com/python-organizers/conferences/raw/master/2020.csv
+$ pycon https://github.com/python-organizers/conferences/raw/master/2023.csv
 # - or
-$ pycon 2020.csv                # note: assumes a saved (local) copy in the working dir (./)
+$ pycon 2023.csv                # note: assumes a saved (local) copy in the working dir (./)
 
 $ kickoff https://github.com/footballbook/calendar/raw/master/README.md
 # - or -
@@ -175,8 +188,8 @@ Use the `whatson` command line tool as a "generic catch-all" to print any type o
 Example:
 
 ```
-$ whatson https://github.com/planetruby/calendar/raw/master/_data/conferences2020.yml \
-          https://github.com/python-organizers/conferences/raw/master/2020.csv
+$ whatson https://github.com/planetruby/calendar/raw/master/_data/conferences2023.yml \
+          https://github.com/python-organizers/conferences/raw/master/2023.csv
 ```
 
 Note: `whatson` is pre-configured (that is, if you do not pass along any datafiles)
@@ -189,8 +202,8 @@ text file. Example - `conf.txt`:
 ########################################
 #  conf.txt - What's On Datafiles
 
-https://github.com/planetruby/calendar/raw/master/_data/conferences2020.yml
-https://github.com/python-organizers/conferences/raw/master/2020.csv  
+https://github.com/planetruby/calendar/raw/master/_data/conferences2023.yml
+https://github.com/python-organizers/conferences/raw/master/2023.csv
 ```
 
 And pass along to `whatson`. Example:
@@ -199,7 +212,8 @@ And pass along to `whatson`. Example:
 $ whatson conf.txt
 ```
 
-Resulting in 2020:
+
+Resulting back in 2020:
 
 ```
 reading >conf.txt<...

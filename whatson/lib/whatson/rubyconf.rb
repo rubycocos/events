@@ -1,4 +1,4 @@
-# encoding: utf-8
+
 
 module WhatsOn
 
@@ -8,7 +8,7 @@ class RubyConf < Tool
 
 
   def initialize( args=ARGV )
-    args = ['https://github.com/planetruby/calendar/raw/master/_data/conferences2020.yml']  if args.empty?
+    args = ['https://github.com/planetruby/conferences/raw/master/_data/conferences2023.yml']  if args.empty?
 
     super( args,
            title:     'Upcoming Ruby Conferences',

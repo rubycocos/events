@@ -1,4 +1,3 @@
-# encoding: utf-8
 
 # stdlibs
 require 'pp'
@@ -18,17 +17,17 @@ require 'logutils/activerecord'
 
 # our own code
 
-require 'eventdb/version'      ## let version always go first
+require_relative 'eventdb/version'      ## let version always go first
 
-require 'eventdb/schema'
-require 'eventdb/models'
+require_relative 'eventdb/schema'
+require_relative 'eventdb/models'
 
-require 'eventdb/outline_reader'
-require 'eventdb/reader'
-require 'eventdb/calendar'   # note: depends (requires) models (first)
-require 'eventdb/database'
+require_relative 'eventdb/outline_reader'
+require_relative 'eventdb/reader'
+require_relative 'eventdb/calendar'   # note: depends (requires) models (first)
+require_relative 'eventdb/database'
 
 
 
 # say hello
-puts EventDb.banner    if defined?($RUBYCOCO_DEBUG) && $RUBYCOCO_DEBUG
+puts EventDb.banner    if defined?($RUBYCOCOS_DEBUG) && $RUBYCOCOS_DEBUG

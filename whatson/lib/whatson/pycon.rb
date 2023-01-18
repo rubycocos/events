@@ -1,4 +1,3 @@
-# encoding: utf-8
 
 module WhatsOn
 
@@ -8,7 +7,7 @@ class PyCon < Tool
 
 
   def initialize( args=ARGV )
-    args = ['https://github.com/python-organizers/conferences/raw/master/2020.csv']  if args.empty?
+    args = ['https://github.com/python-organizers/conferences/raw/main/2023.csv']  if args.empty?
 
     super( args,
            title:     'Upcoming Python Conferences',

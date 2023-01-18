@@ -2,21 +2,21 @@
 
 event.db schema 'n' models for easy (re)use
 
-* home  :: [github.com/textkit/event.db](https://github.com/textkit/event.db)
-* bugs  :: [github.com/textkit/event.db/issues](https://github.com/textkit/event.db/issues)
+* home  :: [github.com/rubycocos/events](https://github.com/rubycocos/events)
+* bugs  :: [github.com/rubycocos/events/issues](https://github.com/rubycocos/events/issues)
 * gem   :: [rubygems.org/gems/eventdb](https://rubygems.org/gems/eventdb)
 * rdoc  :: [rubydoc.info/gems/eventdb](http://rubydoc.info/gems/eventdb)
-* forum :: [ruby-talk@ruby-lang.org](http://www.ruby-lang.org/en/community/mailing-lists)
+
 
 
 ---
 
-NOTE: Command Line Tools - `rubyconf`, `kickoff`, `beerfest` - Now in `whatson` Package  
+NOTE: Command Line Tools - `rubyconf`, `kickoff`, `beerfest` - Now in `whatson` Package
 
 The "out-of-the-box" ready-to-use command line tools (that is, `rubyconf`, `kickoff`, `beerfest`, etc.)
 for listing upcoming events (ruby conferences, football tournaments, beer festivals, etc.)
 moved to its own package / library, that is, `whatson`.
-See the [whatson project for more »](https://github.com/textkit/whatson)
+See the [whatson project for more »](../whatson)
 
 ---
 
@@ -29,7 +29,7 @@ require 'eventdb'
 
 ## Step 1 - Setup (In-Memory) Database and Read-in / Fetch Events
 
-url = "https://github.com/planetruby/calendar/raw/master/_data/conferences2020.yml"
+url = "https://github.com/planetruby/calendar/raw/master/_data/conferences2023.yml"
 
 db = EventDb::Memory.new    # note: use in-memory SQLite database
 db.read( url )
@@ -55,8 +55,20 @@ up.each do |e|
 end
 ```
 
+will print in 2023:
 
-will print in 2020:
+```
+Upcoming Ruby Conferences:
+
+  in 33d   RubyConf Australia, Mon+Tue Feb/20+21 (2d) @ Melbourne, Australia
+  in 96d   RailsConf (United States), Mon-Wed Apr/24-26 (3d) @ Atlanta, Georgia, United States
+  in 113d  RubyKaigi, Thu-Sat May/11-13 (3d) @ Nagano, Japan
+  in 162d  Punk's Not Dead Conf - Ruby (Pixel) Art Programming, Thu+Fri Jun/29+30 (2d) @ Vienna, Austria
+  ...
+```
+
+
+and back in 2020:
 
 ```
 Upcoming Ruby Conferences:
@@ -148,7 +160,7 @@ Option 2b) Style B
 Option 3a) Style A
 
 ``` csv
-title, link, place, start_date, end_date       
+title, link, place, start_date, end_date
 European Ruby Konference - EuRuKo, http://euruko.org, "Helsinki, Finnland", 2020-08-21, 2020-08-22
 ```
 

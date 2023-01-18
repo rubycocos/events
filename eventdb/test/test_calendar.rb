@@ -1,11 +1,10 @@
-# encoding: utf-8
-
 ###
 #  to run use
 #     ruby -I ./lib -I ./test test/test_calendar.rb
 
 
 require 'helper'
+
 
 class TestCalendar < MiniTest::Test
 
